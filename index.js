@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const square2 = squares[winningArrays[i][1]]
             const square3 = squares[winningArrays[i][2]]
             const square4 = squares[winningArrays[i][3]]
-        }
-        //check those squares to see if they have the class of player-one
+            
+             //check those squares to see if they have the class of player-one
         if
         (square1.classList.contains('player-one')&&
         square2.classList.contains('player-one')&&
@@ -92,6 +92,20 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             result.innerHTML = "Player One Wins!"
         }
+
+ //check those squares to see if they have the class of player-two
+        if
+        (square1.classList.contains('player-two')&&
+        square2.classList.contains('player-two')&&
+        square3.classList.contains('player-two')&&
+        square4.classList.contains('player-two')
+        ) 
+        {
+            result.innerHTML = "Player Two Wins!"
+        }
+        }
+
+       
     }
 
 
